@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html>
+	<head>
+  <script>
+  $(function() {
+  });
+  </script>
+		<meta charset="UTF-8">	
+		<title>Track Trade - Sign Up!</title>  
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>Track Trade - Sign Up</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>If you want to connect with the music community and trade tracks, please create an account.</h3>
+			<!-- A Simple Form    -->
+		
+	    <h3>the following is a form to sign up</h3>
+	    <p>*indicates a reqiured field</p>
+
+	    <form id="sign-up-form" method="post" action="#" >
+		<!-- post method allows more data than get method.  Get is for 255 chars or less - quick bits of info to server
+			information from a get method is sent via the URL. -->
+		<fieldset>
+			<h2>Create an Account</h2>
+			<ul>
+				<li>
+					<label id="f-name-label">*First Name</label>
+                    <input id="f-name-label" type="text" name="first-name" placeholder="type your first name" required autofocus
+                           pattern="^[A-Za-z_-]{1,31}$" />
+                    <br />
+                    <label>First Name must be between 1 and 31 characters, and the hyphen(-) and underscore(_) characters are allowed.</label>
+				</li>
+				<li>
+					<label id="l-name-label">*Last Name</label>
+                    <input id="l-name-label" type="text" name="last-name" placeholder="type your last name" required
+                           pattern="^[A-Za-z_-]{1,31}$" />
+                    <br />
+                    <label>Last Name must be between 1 and 31 characters, and the hyphen(-) and underscore(_) characters are allowed.</label>
+				</li>
+                <li>
+                    <label id="u-name-label">*User Name</label>
+                    <input id="u-name-label" type="text" name="user-name" placeholder="Select a username" required
+                           pattern="^[a-z0-9_-]{3,16}$" />
+                    <br />
+                    <label>User Name must be between 3 and 16 characters, and the hyphen(-) and underscore(_) characters are allowed.</label>
+                </li>
+				<li>
+					<label id="PrimaryGenre-label">*Select your primary genre</label>
+					<select id="PrimaryGenre-label" type="text" name="PrimaryGenre" required>
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Rap">Rap</option>
+                        <option value="Country">Country</option>
+                        <option value="Classical">Classical</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Jazz">Jazz</option>						
+					</select>
+				</li>
+				<li>
+					<label id="SecondaryGenre-label">*Select your secondary genre</label>
+					<select id="SecondaryGenre-label" type="text" name="SecondaryGenre" required>
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Rap">Rap</option>
+                        <option value="Country">Country</option>
+                        <option value="Classical">Classical</option>
+                        <option value="R&B">R&B</option>
+                        <option value="Jazz">Jazz</option>								
+					</select>
+				</li>
+				<li>
+					<label id="email-label">*Please Enter a valid email address</label>
+                    <input type="email" name="email" required />	
+				</li>
+				<li>
+					<label id="password-label">*Please Enter a password</label>
+                    <input type="text" name="password" placeholder="strong password" required 
+                           pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})" />	
+                    <br />
+                    <label>
+                        Password Requires:
+                        Length between 6 and 20 characters
+                        one digit from 0-9
+                        one lowercase character
+                        one uppercase character
+                        one of these symbols: @, #, $, or %
+                    </label>
+				</li>
+				<li>
+					<label id="zip-label">*Please Enter Your Zip Code</label>
+                    <input type="text" name="zip" required
+                           placeholder="99999" min="0" max="99999" pattern="^\d{5}$" />	
+                    <br />
+                    <label>Zip must be 5 numbers.</label>
+				</li>
+                <li>
+                    <label id="yearsMusic-label">*How many years have you been in music?</label>
+                    <input type="number" name="yearsMusic" required
+                           placeholder="3" min="0" max="99" />
+                </li>
+			</ul>
+			<input type="submit" name="submit" value="Submit yer data, yo!" />
+		</fieldset>	
+	    </form>     
+        </div><!-- closing maincContent div tag -->
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+		</footer>
+	</body>
+</html>
